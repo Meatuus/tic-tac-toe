@@ -2,7 +2,6 @@ $(function() {
 	var turn = 0;
 
 	$('td').on('click', function() {
-		console.log(turn);
 		if ($(this).hasClass('x') || $(this).hasClass('o')) {
 			alert("you can't play there");
 		} else {
