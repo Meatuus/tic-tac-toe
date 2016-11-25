@@ -1,7 +1,6 @@
 $(function() {
 	var turn = 0;
 
-
 	$('td').on('click', function() {
 		console.log(turn);
 		if ($(this).hasClass('x') || $(this).hasClass('o')) {
@@ -26,15 +25,9 @@ $(function() {
 		}
 	});
 
-	// function playerTurn() {
-	// 	if (true) {
-	//
-	// 	}
-	// }
-
-	// var winConditions = [['.1', '.2', '.3'], ['.4', '.5', '.6'], ['.7', '.8', '.9'], ['.1', '.4', '.7'], ['.2', '.5', '.8'], ['.3', '.6', '.9'], ['.1', '.5', '.9'], ['.3', '.5', '.7']]
-	//
-	// [['.1', '.2', '.3'], ['.4', '.5', '.6'], ['.7', '.8', '.9'], ['.1', '.4', '.7'], ['.2', '.5', '.8'], ['.3', '.6','.9'], ['.']]
+	// var winConditions = [['.1', '.2', '.3'], ['.4', '.5', '.6'], ['.7', '.8', '.9'],
+	// 										['.1', '.4', '.7'], ['.2', '.5', '.8'], ['.3', '.6', '.9'],
+	// 										['.1', '.5', '.9'], ['.3', '.5', '.7']];
 
 	function winCheck(check) {
 		if ($('.1').hasClass(check) && $('.2').hasClass(check) && $('.3').hasClass(check)) {
@@ -84,16 +77,8 @@ $(function() {
 		$('td').html('');
 	});
 
-	// function currentPlayerMove() {
-	// 	if (turn % 2 === 0) {
-	// 		"First"
-	// 	} else {
-	// 		"Second"
-	// 	}
-	// }
-
-
 });
 
-// draw conditions
 // *text that says who wins
+// use array to check win conditions
+// create method to replace 5 lines in if/else statement for 'td'.click function
