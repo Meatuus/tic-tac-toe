@@ -1,7 +1,8 @@
 $(function() {
-	var turn = 0;
+	turn = 0;
 
 	$('td').on('click', function() {
+		console.log('turn');
 		if ($(this).hasClass('x') || $(this).hasClass('o')) {
 			alert("you can't play there");
 		} else {
@@ -9,15 +10,15 @@ $(function() {
 				$(this).html('X');
 				$(this).addClass('x');
 				$('.players-turn').text("Second Player's Turn!");
-				winCheck('x');
 				noWinner('x');
+				winCheck('x');
 				turn++;
 			} else {
 				$(this).html('O');
 				$(this).addClass('o');
 				$('.players-turn').text("First Player's Turn!");
-				winCheck('o');
 				noWinner('o');
+				winCheck('o');
 				turn++;
 			}
 
